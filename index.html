@@ -2,31 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Praktikum bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum bootstrap - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .hero-lucario {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://wallpaperbat.com/img/200962666-dynamic-lucario-hd-wallpaper.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .btn-aura {
+            background-color: #f3d449; 
+            color: #1e1e1e;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-aura:hover {
+            background-color: #2d5a88; 
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Aozora</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tentang.html">Tentang Saya</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="game.html">Koleksi</a>
-        </li>
-      </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Aozora</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">Koleksi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-lucario text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">WELCOME!</h1>
+            <p class="lead">Selamat datang di portal koleksi dan perjalanan saya sebagai Pokemon Trainer.</p>
+            <hr class="my-4 border-light">
+            <p>Fokus utama saya saat ini adalah mengembangkan strategi terbaik untuk Deck Mega Lucario.</p>
+            <a class="btn btn-aura btn-lg" href="game.html" role="button">Lihat Koleksi</a>
+        </div>
     </div>
-  </div>
-</nav>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="mb-4">Misi Saya</h2>
+                <p>Membangun komunitas kolektor kartu Pokemon yang solid dan berbagi informasi mengenai kartu-kartu promo terbaru di Indonesia, khususnya seri SV-P dan S-P.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-muted border-top mt-5">
+        <small>&copy; 2026 Aozora Project</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
